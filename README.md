@@ -3,7 +3,7 @@
 <div align="center">
 
 # Simple Agno AI Chatbot
-## An agent ai created using Agno AI framework
+## An agent ai created using Agno framework
 
 <br/>
 
@@ -42,9 +42,6 @@ Inorder to run the application you should install the following:
 - Python
 - UV
 - uvicorn
-- agno
-- streamlit
-- fastapi
 
  ### Installation
 
