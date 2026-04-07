@@ -7,15 +7,21 @@
 
 <br/>
 
+## Basic knowledge
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/8b6ddb9b-9d15-4497-adfc-6e590b4e7931" />
+
  ## Tools used in the Chatbot
  </div>
  
  ### Calculator tool
  - Written as function in python
-![Calculator tool used]()
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ed7fb4d3-b007-4030-87b3-d10020a028cf" />
+
 ### Stock news tool
 - Fetch stock data from the yfinance library in the Agno
 ![Stock news tool used]()
+
 ### Currency value tool
 - Fetch current currency value from the user query using an external api
 ![Currency value tool used]()
