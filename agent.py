@@ -13,7 +13,7 @@ from tools.userjson import save_user_data
 
 load_dotenv()
 
-model = Ollama(id="llama3.1")
+model = Ollama(id="phi4-mini")
 
 agent = Agent(
     name="Smart chatbot agent",
@@ -25,7 +25,7 @@ agent = Agent(
         save_user_data
     ],
     instructions="""
-You are a smart assistant.
+You are a smart chatbot assistant.
 
 Your behavior rules:
 
