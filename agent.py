@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 from agno.agent import Agent
-from agno.models.google import Gemini
+from agno.models.ollama import Ollama
 
 from tools.calculator import calculator_tool
 from tools.currency import currency_tool
@@ -13,14 +13,7 @@ from tools.userjson import save_user_data
 load_dotenv()
 
 # LLM setup using env
-
-model = Gemini(
-    id=os.getenv("GEMINI_MODEL"),
-    api_key=os.getenv("GEMINI_API_KEY"),
-    project_id=os.getenv("GEMINI_PROJECT_ID"),
-    location=os.getenv("GOOGLE_CLOUD_LOCATION"),
-    vertexai=os.getenv("GOOGLE_GENAI_USE_VERTEXAI")
-)
+model=Ollama(id="llama3.1")
 
 agent = Agent(
     name="Smart Banking Assistant",
