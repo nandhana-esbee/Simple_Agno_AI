@@ -36,7 +36,11 @@
 
 ### User data json storage
 - Storing user data into a json from users who want to open a bank account
-![User data stored]()
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/1bf0edfa-1e2f-4ec3-bbbf-1aede29547c4" />
+- Stored JSON
+  <img width="500" height="267" alt="image" src="https://github.com/user-attachments/assets/c5c110f8-ff41-4242-aa41-346c055d11d9" />
+
+
 
  ### Built With
 
@@ -45,7 +49,7 @@
 - [Streamlit UI](https://streamlit.io/)
 
 ### Used Model
-- Ollama phi4-mini : installed locally and used
+- Groq qwen/qwen3-32b model
 
  ## Getting Started
 
