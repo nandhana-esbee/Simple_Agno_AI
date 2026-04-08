@@ -11,6 +11,10 @@
 
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/8b6ddb9b-9d15-4497-adfc-6e590b4e7931" />
 
+## Thinking
+<img width="600" height="285" alt="image" src="https://github.com/user-attachments/assets/cd65ba0c-22bf-4c8d-bd66-6966e6a5deb2" />
+
+
  ## Tools used in the Chatbot
  </div>
  
