@@ -1,7 +1,3 @@
-# def calculator_tool(principal: float, rate: float, time: float):
-#     interest = (principal * rate * time) / 100
-#     return f"Interest = {interest}"
-
 import re
 
 def calculator_tool(query: str) -> str:

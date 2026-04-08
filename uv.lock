@@ -545,11 +545,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/eb/c6c2478d8a8d633460be40e2a8a6f8f429171997a35a96f81d3b680dec83/google_auth-2.49.1-py3-none-any.whl", hash = "sha256:195ebe3dca18eddd1b3db5edc5189b76c13e96f29e73043b923ebcf3f1a860f7", size = 240737, upload-time = "2026-03-12T19:30:53.159Z" },
 ]
 
-[package.optional-dependencies]
-requests = [
-    { name = "requests" },
-]
-
 [[package]]
 name = "google-auth-httplib2"
 version = "0.3.1"
@@ -561,27 +556,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ed/99/107612bef8d24b298bb5a7c8466f908ecda791d43f9466f5c3978f5b24c1/google_auth_httplib2-0.3.1.tar.gz", hash = "sha256:0af542e815784cb64159b4469aa5d71dd41069ba93effa006e1916b1dcd88e55", size = 11152, upload-time = "2026-03-30T22:50:26.766Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/97/e9/93afb14d23a949acaa3f4e7cc51a0024671174e116e35f42850764b99634/google_auth_httplib2-0.3.1-py3-none-any.whl", hash = "sha256:682356a90ef4ba3d06548c37e9112eea6fc00395a11b0303a644c1a86abc275c", size = 9534, upload-time = "2026-03-30T22:49:03.384Z" },
-]
-
-[[package]]
-name = "google-genai"
-version = "1.70.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "anyio" },
-    { name = "distro" },
-    { name = "google-auth", extra = ["requests"] },
-    { name = "httpx" },
-    { name = "pydantic" },
-    { name = "requests" },
-    { name = "sniffio" },
-    { name = "tenacity" },
-    { name = "typing-extensions" },
-    { name = "websockets" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/74/dd/28e4682904b183acbfad3fe6409f13a42f69bb8eab6e882d3bcbea1dde01/google_genai-1.70.0.tar.gz", hash = "sha256:36b67b0fc6f319e08d1f1efd808b790107b1809c8743a05d55dfcf9d9fad7719", size = 519550, upload-time = "2026-04-01T10:52:46.487Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/a3/d4564c8a9beaf6a3cef8d70fa6354318572cebfee65db4f01af0d41f45ba/google_genai-1.70.0-py3-none-any.whl", hash = "sha256:b74c24549d8b4208f4c736fd11857374788e1ffffc725de45d706e35c97fceee", size = 760584, upload-time = "2026-04-01T10:52:44.349Z" },
 ]
 
 [[package]]
@@ -612,6 +586,23 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/20/18/a746c8344152d368a5aac738d4c857012f2c5d1fd2eac7e17b647a7861bd/googleapis_common_protos-1.74.0.tar.gz", hash = "sha256:57971e4eeeba6aad1163c1f0fc88543f965bb49129b8bb55b2b7b26ecab084f1", size = 151254, upload-time = "2026-04-02T21:23:26.679Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b6/b0/be5d3329badb9230b765de6eea66b73abd5944bdeb5afb3562ddcd80ae84/googleapis_common_protos-1.74.0-py3-none-any.whl", hash = "sha256:702216f78610bb510e3f12ac3cafd281b7ac45cc5d86e90ad87e4d301a3426b5", size = 300743, upload-time = "2026-04-02T21:22:49.108Z" },
+]
+
+[[package]]
+name = "groq"
+version = "1.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/c7/a2153b639062f59f9bc93a1b5507c0c4a6b654b8a9edbf432ec2f4a62d2d/groq-1.1.2.tar.gz", hash = "sha256:9ec2b5b6a1c4856a8c6c38741353c5ab37472a4e3fded02af783750d849cc988", size = 154033, upload-time = "2026-03-25T23:16:10.313Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/34/b0/83e3892a4597a4b8ebf8a662aeaf314765c4c2340516eb1d049b459b24fc/groq-1.1.2-py3-none-any.whl", hash = "sha256:348cb7a674b6aa7105719b533f6fc48fd32b503bc9256924aaed6dc186f778b5", size = 141700, upload-time = "2026-03-25T23:16:08.998Z" },
 ]
 
 [[package]]
@@ -1816,8 +1807,8 @@ dependencies = [
     { name = "agno" },
     { name = "anthropic" },
     { name = "fastapi" },
-    { name = "google-genai" },
     { name = "google-generativeai" },
+    { name = "groq" },
     { name = "ollama" },
     { name = "openai" },
     { name = "python-dotenv" },
@@ -1832,8 +1823,8 @@ requires-dist = [
     { name = "agno", specifier = ">=2.5.14" },
     { name = "anthropic", specifier = ">=0.89.0" },
     { name = "fastapi", specifier = ">=0.135.3" },
-    { name = "google-genai", specifier = ">=1.70.0" },
     { name = "google-generativeai", specifier = ">=0.8.6" },
+    { name = "groq", specifier = ">=1.1.2" },
     { name = "ollama", specifier = ">=0.6.1" },
     { name = "openai", specifier = ">=2.30.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
