@@ -20,15 +20,19 @@
  
  ### Calculator tool
  - Written as function in python
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ed7fb4d3-b007-4030-87b3-d10020a028cf" />
+<img width="600" height="194" alt="image" src="https://github.com/user-attachments/assets/0cf62906-4d09-4b10-ada1-8b87a7fba345" />
+
 
 ### Stock news tool
 - Fetch stock data from the yfinance library in the Agno
-![Stock news tool used]()
+  <img width="600" height="354" alt="image" src="https://github.com/user-attachments/assets/ad2b1fa3-a412-4e42-8adc-f991fb2470b3" />
+
+
 
 ### Currency value tool
 - Fetch current currency value from the user query using an external api
-![Currency value tool used]()
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/3a359efc-e7fe-4354-8b72-88851e636868" />
+
 
 ### User data json storage
 - Storing user data into a json from users who want to open a bank account
